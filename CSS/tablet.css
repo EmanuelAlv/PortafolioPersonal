@@ -1,0 +1,112 @@
+:root{
+    --clean-gray: #323338;
+    --dark-gray: #2c2d32;
+    --text-white: #d5d7d7;
+    --text-black: #1D1616;
+    --orange: #f49738;
+    --padding-standar: 22px;
+    --desktop-fontsize: 1.9rem;
+    --desktop-h4Size: 3rem;
+}
+h1,h2{
+    text-align: center;
+    font-size: 4.5rem;
+    color: var(--text-white);
+}
+h4{
+    color: var(--text-white);
+    font-size: var(--desktop-h4Size);
+}
+p{
+    text-align: justify;
+    font-size: var(--desktop-fontsize);
+    color: var(--text-white);
+}
+button{
+    width: 200px;
+    height: 50px;
+    margin: 0 var(--padding-standar) 0 var(--padding-standar);
+}
+/* BANNER ---------------------------------------------------------------------------------------------- */
+.banner{
+    grid-template-columns: repeat(auto-fit, minmax(150px, 750px));
+}
+.banner .banner-info h1{
+    font-size: 8rem;
+}
+.banner .banner-info p{
+    font-size: var(--desktop-fontsize);
+}
+.banner-button--container{
+    flex-direction: row;
+}
+/* sobre mi ---------------------------------------------------------------------------------------------*/
+.sobreMi{
+    padding: var(--padding-standar) 100px var(--padding-standar) 100px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 600px));
+    justify-content: space-between;
+    height: 500px;
+}
+.miInfo h2{
+    text-align: start;
+}
+.sobreMi .miImg img{
+    position: relative;
+    left: 17%;
+    margin-top: 16px;
+    width: 450px;
+}
+/* CERTIFICADOS----------------------------------------------------------------------------------------- */
+.certificados-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 450px));
+    justify-content: center;
+}
+.tarjeta-certificados img{
+    width: 45px;
+}
+.boton-certificados{
+    width: 250px;
+    font-size: var(--desktop-fontsize);
+}
+/* IDIOMAS =========================================================================================== */
+.idiomas{
+    height: 480px;
+}
+.idiomas h4{
+    top: -60px;
+}
+.wrap-circles {
+    height: 80%;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 500px));
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+.circle {
+    width: 250px;
+    height: 250px;
+}
+.circle .inner {
+    width: 200px;
+    height: 200px;
+    font-size: 25px;
+}
+  /* CONOCIMIENTOS========================================================================================================= */
+  .conocimientos-container{
+    grid-template-columns: repeat(auto-fit, minmax(100px, 235px));
+}
+.conocimientos-container .conocimientos-img{
+    width: 150px
+}
+/* CONTACTO================================================================================================================ */
+.Contacto{
+    height: 300px;
+}
+.contacto-container{
+    height: 60%;
+    align-items: center;
+}
+.contacto-box{
+    width: 200px;
+    height: 50px;
+}

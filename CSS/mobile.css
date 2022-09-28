@@ -1,0 +1,358 @@
+:root{
+    --clean-gray: #323338;
+    --dark-gray: #2c2d32;
+    --text-white: #d5d7d7;
+    --text-black: #1D1616;
+    --orange: #f49738;
+    --padding-standar: 22px;
+    --mobile-fontsize: 1.6rem;
+    --mobile-h4Size: 2rem;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--text-black);
+}
+h1,h2{
+    text-align: center;
+    font-size: 3rem;
+    color: var(--text-white);
+}
+h4{
+    color: var(--text-white);
+    font-size: var(--mobile-h4Size);
+}
+p{
+    text-align: justify;
+    font-size: var(--mobile-fontsize);
+    color: var(--text-white);
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--text-white);
+    font-size: var(--mobile-fontsize);
+}
+/* Header ---------------------------------------------------------------------------------------------- */
+header{
+    width: 100%;
+    height: 60px;
+    background-color: var(--dark-gray);
+}
+header nav{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+header nav .nav-section{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+nav .nav-section a{
+    margin-right: 10px;
+    color: var(--text-white);
+}
+
+/* BANNER ---------------------------------------------------------------------------------------------- */
+.banner{
+    background-image: url("../assets/img/bannerSmall.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    padding: var(--padding-standar);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 350px));
+    justify-content: space-around;
+}
+.banner .banner-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.banner .banner-info h1{
+    text-align: center;
+    align-self: center;
+    font-size: 5rem;
+}
+.banner .banner-info p{
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: var(--mobile-fontsize);
+}
+.banner-button--container{
+    display: flex;
+    flex-direction: column;
+}
+button{
+    width: 200px;
+    height: 45px;
+    font-size: var(--mobile-fontsize);
+    margin-bottom: 16px;
+    border-radius: 12px;
+    background: none;
+    border:solid 2px var(--text-white);
+    color: var(--text-white);
+}
+/* sobre mi ---------------------------------------------------------------------------------------------*/
+.sobreMi{
+    padding: var(--padding-standar) var(--padding-standar) var(--padding-standar) var(--padding-standar);
+    background-color: var(--clean-gray);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 550px));
+    justify-content: space-around;
+    align-items: center;
+}
+.miInfo h2{
+    padding-bottom: 10px;
+    color: var(--text-white);
+    text-align: center;
+}
+.sobreMi .miImg{
+    justify-self: center;
+}
+.sobreMi .miImg img{
+    margin-top: 16px;
+    width: 300px;
+}
+/* CERTIFICADOS----------------------------------------------------------------------------------------- */
+.certificados{
+    background-color: var(--text-white);
+    padding: var(--padding-standar);
+    background-color: var(--dark-gray);
+    width: minmax(150px, 300px);
+}
+.certificados h2{
+    margin-bottom: var(--padding-standar);
+    text-align: center;
+}
+.certificados-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
+    justify-content: center;
+}
+.tarjeta-certificados{
+    border-radius: 4px;
+    padding: 10px;
+    width: auto;
+    background-color: var(--clean-gray);
+    margin: 10px;
+    border-radius: 12px;
+}
+.tarjeta-certificados h4{
+    color: var(--text-white);
+    font-size: var(--mobile-h4Size);
+    margin-bottom: 10px;
+
+}
+.tarjeta-certificados img{
+    width: 35px;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.boton-certificados--Container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.boton-certificados{
+    margin-top: var(--padding-standar);
+    border:solid 2px var(--orange);
+    color: var(--orange);
+    position: relative;
+}
+/* IDIOMAS =========================================================================================== */
+.idiomas{
+    background-color: var(--clean-gray);
+    padding: var(--padding-standar);
+}
+.idiomas h2{
+    margin-bottom: var(--padding-standar);
+}
+.idiomas h4{
+    text-align: center;
+    position: relative;
+    top: -30px;
+}
+.wrap-circles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
+    justify-items: center;
+    /* min-height: 100vh; */
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    
+    background: var(--clean-gray);
+  }
+  
+  .circle {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 26px;
+    border-radius: 50%;
+    background: #FFCDB2;
+    /* overflow: hidden; */
+  }
+  .circle.espanol {
+    background-image: conic-gradient(var(--orange) 100%, var(--text-white) 0);
+  }
+  .circle.ingles {
+    background-image: conic-gradient(var(--orange) 80%, var(--text-white) 0);
+  }
+  
+  .circle .inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 115px;
+    height: 115px;
+    background: var(--clean-gray);
+    border-radius: 50%;
+    font-size: 1.85em;
+    font-weight: 300;
+    color: var(--text-white);
+  }
+
+  /* CONOCIMIENTOS========================================================================================================= */
+  .Conocimietos{
+    background-color: var(--dark-gray);
+    padding: var(--padding-standar);
+  }
+  .Conocimietos h2{
+    padding-bottom: var(--padding-standar);
+  }
+  .conocimientos-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 135px));
+    justify-content: center;
+    justify-items: center;
+  }
+  .conocimientos-container .conocimientos-img{
+    width: 90px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 10px;
+    filter: invert(100%) sepia(1%) saturate(3495%) hue-rotate(162deg) brightness(86%) contrast(94%);
+  }
+  .icon-container{
+    margin: var(--padding-standar);
+  }
+  .icon-container h4{
+    text-align: center;
+  }
+  /* CONTACTO================================================================================================================ */
+  .Contacto{
+    background-color: var(--clean-gray);
+    padding: var(--padding-standar);
+  }
+  .Contacto h2{
+    margin-bottom: var(--padding-standar);
+  }
+  .contacto-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 220px));
+    justify-content: center;
+    justify-items: center;
+  }
+  .contacto-container p{
+    color: var(--orange);
+  }
+
+.contacto-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 45px;
+    font-size: var(--mobile-fontsize);
+    margin: 16px;
+    border-radius: 12px;
+    background: none;
+    border:solid 2px var(--orange);
+    color: var(--orange);
+}
+.contacto-box .tel1{
+    filter: invert(71%) sepia(23%) saturate(1613%) hue-rotate(334deg) brightness(98%) contrast(94%);
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-image: url('../assets/icon/telephone.svg');
+    
+    /*Buenas practricas con backgtound images*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.contacto-box .whatsapp{
+    filter: invert(71%) sepia(23%) saturate(1613%) hue-rotate(334deg) brightness(98%) contrast(94%);
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-image: url('../assets/icon/wha.svg');
+    /*Buenas practricas con backgtound images*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.contacto-box .mail{
+    filter: invert(71%) sepia(23%) saturate(1613%) hue-rotate(334deg) brightness(98%) contrast(94%);
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-image: url('../assets/icon/mail.svg');
+    /*Buenas practricas con backgtound images*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* ===================================== */
+
+.padre {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    background: var(--orange);
+    border-radius:50%;
+    border: 1px solid var(--dark-gray);
+    z-index:3;
+    text-align: center;
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .padre .little-icons{
+    width: 30px;
+    filter: invert(100%) sepia(1%) saturate(3495%) hue-rotate(162deg) brightness(86%) contrast(94%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--clean-gray);
+  }
